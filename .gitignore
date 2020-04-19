@@ -102,3 +102,4 @@ ENV/
 
 molecules_*.json
 data/*
+.vscode
