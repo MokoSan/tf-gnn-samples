@@ -1,0 +1,7 @@
+Model has 1582353 parameters.
+Loaded model from snapshot trained_models/VarMisuse_GGNN_2020-04-18-16-25-05_29590_best_model.pickle.
+ Using the following task params: {"max_variable_candidates": 5, "graph_node_label_max_num_chars": 19, "graph_node_label_representation_size": 64, "slot_score_via_linear_layer": true, "loss_function": "max-likelihood", "max-margin_loss_margin": 0.2, "out_layer_dropout_rate": 0.2, "add_self_loop_edges": false}
+ Using the following model params: {"max_nodes_in_batch": 200000, "graph_num_layers": 6, "graph_num_timesteps_per_layer": 1, "graph_layer_input_dropout_keep_prob": 0.8, "graph_dense_between_every_num_gnn_layers": 10000, "graph_model_activation_function": "tanh", "graph_residual_connection_every_num_layers": 10000, "graph_inter_layer_norm": false, "max_epochs": 10000, "patience": 5, "optimizer": "Adam", "learning_rate": 0.00015, "learning_rate_decay": 0.98, "lr_for_num_graphs_per_batch": null, "momentum": 0.85, "clamp_gradient_norm": 1.0, "random_seed": 0, "hidden_size": 96, "graph_rnn_cell": "GRU", "graph_activation_function": "tanh", "message_aggregation_function": "sum", "graph_message_weights_dropout_ratio": 0.0}
+== Running Test on data/varmisuse ==
+Loss 1.07533 on 1105 graphs
+Metrics: Accuracy: 0.618

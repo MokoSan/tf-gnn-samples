@@ -1,0 +1,60 @@
+Model has 3809937 parameters.
+Run VarMisuse_RGCN_2020-04-18-17-16-51_30727 starting.
+ Using the following task params: {"max_variable_candidates": 5, "graph_node_label_max_num_chars": 19, "graph_node_label_representation_size": 64, "slot_score_via_linear_layer": true, "loss_function": "max-likelihood", "max-margin_loss_margin": 0.2, "out_layer_dropout_rate": 0.2, "add_self_loop_edges": true}
+ Using the following model params: {"max_nodes_in_batch": 75000, "graph_num_layers": 10, "graph_num_timesteps_per_layer": 1, "graph_layer_input_dropout_keep_prob": 0.9, "graph_dense_between_every_num_gnn_layers": 10000, "graph_model_activation_function": "tanh", "graph_residual_connection_every_num_layers": 10000, "graph_inter_layer_norm": false, "max_epochs": 10000, "patience": 5, "optimizer": "Adam", "learning_rate": 0.00015, "learning_rate_decay": 0.98, "lr_for_num_graphs_per_batch": null, "momentum": 0.85, "clamp_gradient_norm": 1.0, "random_seed": 0, "hidden_size": 128, "graph_activation_function": "ReLU", "message_aggregation_function": "sum"}
+ git tagged as 8732bf2eee5130f32ffdf05b06b6236e6a2be25e
+== Epoch 1
+ Train: loss: 2.79197 || Accuracy: 0.556 || graphs/sec: 18.41 | nodes/sec: 196259 | edges/sec: 1411159
+ Valid: loss: 0.92193 || Accuracy: 0.598 || graphs/sec: 154.65 | nodes/sec: 235263 | edges/sec: 1586476
+  (Best epoch so far, target metric decreased to -0.59756 from inf. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 2
+ Train: loss: 0.91212 || Accuracy: 0.659 || graphs/sec: 20.46 | nodes/sec: 218029 | edges/sec: 1567688
+ Valid: loss: 0.89644 || Accuracy: 0.625 || graphs/sec: 409.21 | nodes/sec: 622524 | edges/sec: 4197928
+  (Best epoch so far, target metric decreased to -0.62500 from -0.59756. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 3
+ Train: loss: 0.76124 || Accuracy: 0.709 || graphs/sec: 20.97 | nodes/sec: 223542 | edges/sec: 1607327
+ Valid: loss: 0.91305 || Accuracy: 0.613 || graphs/sec: 411.82 | nodes/sec: 626499 | edges/sec: 4224737
+== Epoch 4
+ Train: loss: 0.65171 || Accuracy: 0.743 || graphs/sec: 21.59 | nodes/sec: 230137 | edges/sec: 1654752
+ Valid: loss: 0.86301 || Accuracy: 0.637 || graphs/sec: 412.57 | nodes/sec: 627635 | edges/sec: 4232392
+  (Best epoch so far, target metric decreased to -0.63720 from -0.62500. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 5
+ Train: loss: 0.59563 || Accuracy: 0.771 || graphs/sec: 22.09 | nodes/sec: 235462 | edges/sec: 1693035
+ Valid: loss: 0.85298 || Accuracy: 0.659 || graphs/sec: 409.92 | nodes/sec: 623602 | edges/sec: 4205199
+  (Best epoch so far, target metric decreased to -0.65854 from -0.63720. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 6
+ Train: loss: 0.55122 || Accuracy: 0.788 || graphs/sec: 22.69 | nodes/sec: 241873 | edges/sec: 1739133
+ Valid: loss: 0.79634 || Accuracy: 0.680 || graphs/sec: 411.01 | nodes/sec: 625260 | edges/sec: 4216377
+  (Best epoch so far, target metric decreased to -0.67988 from -0.65854. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 7
+ Train: loss: 0.50974 || Accuracy: 0.811 || graphs/sec: 22.74 | nodes/sec: 242339 | edges/sec: 1742484
+ Valid: loss: 0.90972 || Accuracy: 0.686 || graphs/sec: 405.83 | nodes/sec: 617379 | edges/sec: 4163237
+  (Best epoch so far, target metric decreased to -0.68598 from -0.67988. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 8
+ Train: loss: 0.46666 || Accuracy: 0.819 || graphs/sec: 23.49 | nodes/sec: 250351 | edges/sec: 1800092
+ Valid: loss: 0.71971 || Accuracy: 0.710 || graphs/sec: 404.57 | nodes/sec: 615470 | edges/sec: 4150364
+  (Best epoch so far, target metric decreased to -0.71037 from -0.68598. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 9
+ Train: loss: 0.43890 || Accuracy: 0.832 || graphs/sec: 23.70 | nodes/sec: 252610 | edges/sec: 1816336
+ Valid: loss: 0.77952 || Accuracy: 0.692 || graphs/sec: 404.49 | nodes/sec: 615344 | edges/sec: 4149513
+== Epoch 10
+ Train: loss: 0.40225 || Accuracy: 0.851 || graphs/sec: 24.09 | nodes/sec: 256724 | edges/sec: 1845919
+ Valid: loss: 0.66979 || Accuracy: 0.738 || graphs/sec: 409.35 | nodes/sec: 622748 | edges/sec: 4199440
+  (Best epoch so far, target metric decreased to -0.73780 from -0.71037. Saving to 'trained_models/VarMisuse_RGCN_2020-04-18-17-16-51_30727_best_model.pickle')
+== Epoch 11
+ Train: loss: 0.36788 || Accuracy: 0.857 || graphs/sec: 24.22 | nodes/sec: 258162 | edges/sec: 1856254
+ Valid: loss: 0.69338 || Accuracy: 0.710 || graphs/sec: 410.75 | nodes/sec: 624877 | edges/sec: 4213795
+== Epoch 12
+ Train: loss: 0.36367 || Accuracy: 0.867 || graphs/sec: 24.12 | nodes/sec: 257124 | edges/sec: 1848792
+ Valid: loss: 0.77339 || Accuracy: 0.729 || graphs/sec: 414.37 | nodes/sec: 630378 | edges/sec: 4250895
+== Epoch 13
+ Train: loss: 0.38296 || Accuracy: 0.872 || graphs/sec: 24.21 | nodes/sec: 258084 | edges/sec: 1855697
+ Valid: loss: 0.73734 || Accuracy: 0.704 || graphs/sec: 408.38 | nodes/sec: 621267 | edges/sec: 4189451
+== Epoch 14
+ Train: loss: 0.32008 || Accuracy: 0.879 || graphs/sec: 24.56 | nodes/sec: 261720 | edges/sec: 1881839
+ Valid: loss: 0.75016 || Accuracy: 0.704 || graphs/sec: 412.35 | nodes/sec: 627300 | edges/sec: 4230134
+== Epoch 15
+ Train: loss: 0.30470 || Accuracy: 0.890 || graphs/sec: 24.55 | nodes/sec: 261663 | edges/sec: 1881431
+ Valid: loss: 0.88617 || Accuracy: 0.686 || graphs/sec: 409.56 | nodes/sec: 623062 | edges/sec: 4201557
+Stopping training after 5 epochs without improvement on validation loss.
+Training took 1314s. Best validation results: Accuracy: 0.738
