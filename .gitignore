@@ -103,3 +103,5 @@ ENV/
 molecules_*.json
 data/*
 .vscode
+
+.DS_Store
